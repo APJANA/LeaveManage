@@ -76,8 +76,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <?php include("includes/header.php"); ?> 
 
 <div class="container-fluid">
-    <div class="p-4 mx-auto shadow rounded" style="margin-top: 50px; width: 100%; max-width: 340px;">
-        <h3 class="text-center">My School</h3>  
+    <div class="p-4 mx-auto shadow rounded" style="margin-top: 50px; width: 100%; max-width: 440px;">
+        <h3 class="text-center">ATI LEAVE MANAGEMENT</h3>  
         <img src="assets/img/logo.jpg" class="border border-primary d-block mx-auto rounded-circle" style="width: 100px;" alt="Responsive image">
         <h3 class="text-center">Login</h3>  
 
@@ -99,7 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <br>
             <button class="btn btn-primary w-100" type="submit" id="login-form">Login</button>
             <br>
-            <a href="register.php">Register</a>
+            
         </form>
     </div>
 </div>

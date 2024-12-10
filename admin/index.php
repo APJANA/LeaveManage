@@ -72,20 +72,21 @@ $rejected_percentage = ($total_leave > 0) ? floor(($rejected_leave / $total_leav
 </head>
 <body>
     <!-- Navigation Bar -->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-primary" pcoded-header-position="fixed">
+     <nav class="navbar navbar-expand-lg  text-bg-dark" pcoded-header-position="fixed">
         
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Leave Management</a>
+            <a class="navbar-brand text-light" href="#">Leave Management</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-user"></i> Profile</a>
+                        <a class="nav-link text-light" href="#"><i class="fas fa-user"></i> Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                 
+                        <a class="nav-link text-light" href="../logout.php"><i class="fas fa-sign-out-alt"></i> Logout</a>
                     </li>
                 </ul>
             </div>
@@ -124,12 +125,15 @@ $rejected_percentage = ($total_leave > 0) ? floor(($rejected_leave / $total_leav
                                 <i class="fas fa-cog"></i> Settings
                             </a>
                         </li>
+                        
+               
+                    </ul>
+           
                     </ul>
                 </div>
             </nav>
 
-            
-
+        
             <!-- Main Content -->
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 content">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
@@ -375,7 +379,7 @@ $rejected_percentage = ($total_leave > 0) ? floor(($rejected_leave / $total_leav
                 </div> -->
 
                 <!-- New Leave Request Form -->
-                <h2 class="mb-3">Submit New Leave Request</h2>
+                <!-- <h2 class="mb-3">Submit New Leave Request</h2>
                 <form>
                     <div class="row mb-3">
                         <div class="col-md-6">
@@ -410,7 +414,7 @@ $rejected_percentage = ($total_leave > 0) ? floor(($rejected_leave / $total_leav
                 </form>
             </main>
         </div>
-    </div>
+    </div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
