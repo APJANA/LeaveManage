@@ -10,7 +10,7 @@ if (!isset($_SESSION['EmployeeID']) || !isset($_SESSION['RoleID'])) {
 }
 
 $userRole = $_SESSION['RoleID'];
-if ($userRole != 4 && $userRole != 3) {
+if ($userRole != 2) {
     header('Location: ../index.php');
     exit();
 }

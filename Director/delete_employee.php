@@ -2,7 +2,10 @@
 include("../includes/autoload.php");
 
 // Establish database connection
-
+if (!isset($_SESSION['RoleID']) ||  $_SESSION['RoleID'] != 2) {
+    header("Location: ../index.php");
+    exit;
+}
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);

@@ -18,7 +18,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         SELECT `EmployeeID`, `FullName`, `Email`, `PasswordHash`, `RoleID`, `LeaveBalance`, `IsActive` 
         FROM `employees` 
         WHERE `Email` = '$email' AND `IsActive` = 1"; // Check if the employee is active
+
     $result = mysqli_query($conn, $query);
+
     // Check if query executed successfully
     if ($result) {
         if (mysqli_num_rows($result) === 1) {
@@ -105,5 +107,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }, 2000);
 </script>
-
-<?php include("includes/footer.php"); ?>

@@ -3,7 +3,7 @@ session_start();
 include("../includes/autoload.php");
 include("../includes/header.php");
 include("../includes/topbar.php");
-if (!isset($_SESSION['RoleID']) ||  $_SESSION['RoleID'] != 2  &&  $_SESSION['RoleID'] != 1) {
+if (!isset($_SESSION['RoleID']) ||  $_SESSION['RoleID'] != 2) {
     header("Location: ../index.php");
     exit;
 }
@@ -73,7 +73,7 @@ if (!isset($_SESSION['RoleID']) ||  $_SESSION['RoleID'] != 2  &&  $_SESSION['Rol
                                     <td>{$row['LeaveBalance']}</td>
                                     <td>
                                         <a href='edit_employee.php?id={$row['EmployeeID']}' class='btn btn-sm btn-primary'>Edit</a>
-                                       
+                                        <a href='delete_employee.php?id={$row['EmployeeID']}' class='btn btn-sm btn-danger' onclick='return confirm(\"Are you sure you want to delete this employee?\")'>Delete</a>
                                     </td>
                                     
 
@@ -92,5 +92,5 @@ if (!isset($_SESSION['RoleID']) ||  $_SESSION['RoleID'] != 2  &&  $_SESSION['Rol
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
+<?php include("../includes/footer.php"); ?>
 </html>

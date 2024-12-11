@@ -8,4 +8,3 @@ if (!$conn) {
     error_log("Connection failed: " . mysqli_connect_error());
     die(json_encode(array('status' => 'error', 'message' => 'Database connection failed')));
 }
-?>

@@ -5,7 +5,7 @@ include("../includes/header.php");
 include("../includes/topbar.php");
 
 // Check if the user is an admin
-if (!isset($_SESSION['RoleID']) || $_SESSION['RoleID'] != 1) {
+if (!isset($_SESSION['RoleID']) || $_SESSION['RoleID'] != 1 && $_SESSION['RoleID'] != 2) {
     header("Location: ../index.php");
     exit;
 }
@@ -108,4 +108,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+<?php include("../includes/footer.php"); ?>
 </html>
